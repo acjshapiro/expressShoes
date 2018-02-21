@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head %>
+    <title>SHOES</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+      <% include ./partials/header %>
+    </header>
+    <h1 class="center">My Shoes</h1>
+    <hr />
+   <div class='row'>
+     <div class='col s12 m4'>
+       <h3>ADD A SHOE</h3>
+       <form action='/shoes' method='post'>
+         <input type='text' name='model' placeholder='Model' />
+         <button class='btn btn-waves' type='submit'>Add</button>
+
+
+       </form>
+     </div>
+     <table class='table col m8 s12'>
+       <thead>
+         <th>Model</th>
+         <th>Edit</th>
+         <th>x</th>
+       </thead>
+       <tbody>
+         <% shoes.forEach( function(shoe) { %>
+           <% var url = "/shoes/" + shoe.id + "?_method=DELETE" %>
+           <% var editUrl = "shoes/" + shoe.id + "/edit" %>
+           <tr>
+             <td><%= shoe.model %></td>
+             <td>
+               <form method="POST" action=<%= url %>>
+                 <a class="btn" href=<%= editUrl %>>EDIT</a>
+                 <button class="btn red">Remove</button>
+               </form>
+            </td>
+          </tr>
+         <% }); %>
+       </tbody>
+     </table>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
