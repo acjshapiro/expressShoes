@@ -1,4 +1,4 @@
-@import "bootstrap.min.css";
+@import 'bootstrap.min.css';
 @import 'materialize.min.css';
 
 #indexh1{
@@ -17,6 +17,8 @@
 h1{
   font-family: 'Libre Barcode 39 Text', cursive;
   text-align: center;
+  font-size: 300px;
+  margin-top: 100px;
 }
 h3{
   margin-left: 20px;
@@ -29,19 +31,4 @@ form{
   font-family: 'Libre Barcode 39 Text', cursive;
   font-size: 50px;
 
-}
-
-/* .nbar{
-  float: right;
-} */
-.nav-pills{
-  font-family: 'Libre Barcode 39 Text', cursive;
-  font-size: 2.7em;
-  background: #88A5C2;
-  opacity:.9;
-}
-
-.fright{
-  float:right;
-  color: black;
 }
