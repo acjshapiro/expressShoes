@@ -1,5 +1,19 @@
+@import "bootstrap.min.css";
 @import 'materialize.min.css';
 
+#indexh1{
+  margin-top: 200px;
+  font-size: 300px;
+}
+#myshoes{
+  font-size: 175px;
+}
+#add{
+  margin-top: 100px;
+}
+.container{
+  margin-top: 200px;
+}
 h1{
   font-family: 'Libre Barcode 39 Text', cursive;
   text-align: center;
@@ -11,11 +25,23 @@ h3{
 form{
   margin-left: 20px;
 }
-.brand-logo{
+.brand{
   font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 50px;
 
 }
 
-.nbar{
+/* .nbar{
   float: right;
+} */
+.nav-pills{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 2.7em;
+  background: #88A5C2;
+  opacity:.9;
+}
+
+.fright{
+  float:right;
+  color: black;
 }

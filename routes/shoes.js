@@ -8,7 +8,7 @@ var Shoe = require('../models').Shoe;
 router.get('/', function(req, res) {
   Shoe.all({
     order: [
-      ['createdAt', 'ASC']
+      ['updatedAt', 'DESC']
     ]
   })
     .then(function(shoes){

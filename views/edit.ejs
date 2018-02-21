@@ -9,7 +9,7 @@
     <div class="container">
       <% var url = "/shoes/" + shoe.id + "?_method=PUT" %>
       <form method="POST" action=<%= url %> >
-        <input required name="model" value=<%= shoe.model %> />
+        <input required name="model" value="<%= shoe.model %>" />
         <a href="/shoes" class="btn red">Cancel</a>
         <button class="btn">Save</button>
      </form>
